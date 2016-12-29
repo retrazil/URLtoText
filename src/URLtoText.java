@@ -30,7 +30,7 @@ public class URLtoText implements Runnable{
 
     @Override
     public void run() {
-        frame = new JFrame("URL fetcher");
+        frame = new JFrame("URLtoText");
         frame.setLocationRelativeTo(null); // create a window at the center of the screen
         frame.setPreferredSize(new Dimension(400, 800));
         
