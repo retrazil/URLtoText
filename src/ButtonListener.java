@@ -34,13 +34,12 @@ public class ButtonListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         List<String> shellCommand = new ArrayList<>();;
-
+        
         shellCommand.add("lynx");
         shellCommand.add("-dump");
         shellCommand.add(inputURL.getText());
 
         ProcessBuilder pb = new ProcessBuilder(shellCommand);
-        pb.directory(new File("/home/suraj"));
         StringBuilder webText = new StringBuilder();
 
         try {
